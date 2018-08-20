@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nguyentheson.module21_ex1.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:text="Các kiểu lập trình sự kiện"
+        android:textSize="20dp"
+        android:background="@color/green"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+    android:id="@+id/label_numberA"
+    android:layout_width="61dp"
+    android:layout_height="48dp"
+        android:gravity="bottom"
+    android:paddingBottom="10dp"
+    android:textSize="18dp"
+    android:text="Số A"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/text_numberA"
+        android:layout_width="302dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập số A"
+        app:layout_constraintLeft_toRightOf="@+id/label_numberA"
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <TextView
+        android:id="@+id/label_numberB"
+        android:layout_width="61dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="bottom"
+        android:paddingBottom="10dp"
+        android:textSize="18dp"
+        android:text="Số B"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_numberA"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/text_numberB"
+        android:layout_width="302dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập số B"
+        app:layout_constraintLeft_toRightOf="@+id/label_numberB"
+        app:layout_constraintRight_toRightOf="@+id/text_numberA"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/text_numberA" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingTop="8dp"
+        android:background="@color/green"
+        android:text=""
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_numberB"
+        android:layout_marginTop="0dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tổng 2 số"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_result"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hiệu 2 số"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_plus"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Button
+        android:id="@+id/btn_mutil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tích 2 số"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_minus"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Button
+        android:id="@+id/btn_divide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Thương 2 số"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mutil"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Button
+        android:id="@+id/btn_calGCD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tính ước chung lơn nhất"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_divide"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Thoát khỏi chương trình"
+        android:textColor="@color/red"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calGCD"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
